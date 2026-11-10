@@ -18,7 +18,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * Generation step: call OpenAI via Spring AI and stream tokens to the browser over SSE.
+ * Generation step: call the configured Spring AI model and stream tokens to the browser over SSE.
  */
 @Component
 @RequiredArgsConstructor

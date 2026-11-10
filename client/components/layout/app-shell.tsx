@@ -68,11 +68,11 @@ export function AppShell({
               <SidebarMenuButton
                 size="lg"
                 render={<Link href="/dashboard" />}
-                tooltip="DevPilot"
+                tooltip="cogniRise"
               >
                 <DevPilotIcon className="size-8 rounded-[10px]" />
                 <div className="grid flex-1 text-left text-sm leading-tight">
-                  <span className="truncate font-semibold">DevPilot</span>
+                  <span className="truncate font-semibold">cogniRise</span>
                   <span className="truncate text-xs text-muted-foreground">
                     Chat with your code
                   </span>
@@ -218,7 +218,7 @@ export function BrandMark({ className }: { className?: string }) {
       )}
     >
       <DevPilotIcon className="size-8 rounded-[10px]" />
-      <span className="font-heading text-[1.05rem] leading-none">DevPilot</span>
+      <span className="font-heading text-[1.05rem] leading-none">cogniRise</span>
     </div>
   );
 }
@@ -233,7 +233,13 @@ export function GhostButtonLink({
   className?: string;
 }) {
   return (
-    <Button variant="ghost" size="sm" className={className} render={<Link href={href} />}>
+    <Button
+      variant="ghost"
+      size="sm"
+      className={className}
+      nativeButton={false}
+      render={<Link href={href} />}
+    >
       {children}
     </Button>
   );
